@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: azure-face-login-demo
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: AZURE_FACE_ENDPOINT
+        sync: false
+      - key: AZURE_FACE_KEY
+        sync: false
