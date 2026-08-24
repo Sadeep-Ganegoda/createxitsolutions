@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Azure Face Login</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Azure Face Login</h1>
+    <p>Register your face, then login using the webcam.</p>
+    <input id="username" placeholder="Username">
+    <div class="cam">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" hidden></canvas>
+    </div>
+    <div class="buttons">
+      <button id="register">Register Face</button>
+      <button id="login">Login with Face</button>
+    </div>
+    <div id="result">Ready.</div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
